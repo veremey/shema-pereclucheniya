@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <div class="page-asider"></div>
+
+        <div class="page__wrapp">
+            <div class="page__vswrapp">
+                {{> static/static}}
+                {{> choose/choose}}
+                {{> footer/footer}}
+            </div>
+        </div>
+
+        <div class="page-popup">
+            <div class="page-window">
+                <p class="popup__desc">Пожалуйста, укажите вес <br> от 60 кг</p>
+                <button class="popup__btn">Ввод</button>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function printDiv(divName) {
+                var printContents = document.getElementById(divName).innerHTML;
+                var w = window.open();
+                w.document.write(printContents);
+                w.print();
+                w.close();
+            }
+        </script>
+
+        <script src="static/js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

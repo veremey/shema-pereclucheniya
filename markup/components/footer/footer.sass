@@ -1,0 +1,60 @@
+.footer
+	margin-top: 20px
+	display: none
+	+r(700)
+		margin-top: 30px
+	&.is-active
+		display: block
+
+.simple__list
+	margin: 0 0 70px
+	padding: 0
+	list-style-type: none
+	+r(700)
+		margin-bottom: 30px
+.simple__item
+	display: flex
+	&_icon
+		width: 39px
+		height: 39px
+		display: inline-block
+		vertical-align: top
+		margin-right: 40px
+		flex: 0 1 auto
+		+r(700)
+			margin-right: 20px
+
+.literature
+	&__title
+		font-size: 20px
+		margin-bottom: 20px
+		color: #333
+		+lm
+		+r(500)
+			font-size: 12px
+			margin-bottom: 10px
+	&__list
+		font-size: 0
+		padding: 0
+		margin: 0 0 20px 20px
+		list-style-type: decimal
+	&__item
+		font-size: 14px
+		margin-bottom: 10px
+		padding-left: 10px
+		color: #333
+		+lr
+		font-style: italic
+		+r(700)
+			font-size: 12px
+
+.footnote
+	padding: 0 0 0 30px
+	margin-bottom: 20px
+	&__desc
+		font-size: 14px
+		line-height: 1.7
+		+lr
+		font-style: italic
+		+r(700)
+			font-size: 12px

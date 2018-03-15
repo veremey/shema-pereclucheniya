@@ -1,0 +1,185 @@
+
+html
+	+selection
+		background: rgba(0, 0, 0, .2)
+		color: #fff
+
+html, body
+	height: 100%
+
+body
+	color: #000
+	+lr
+
+
+.page-asider
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 220px
+	height: 100%
+	background-color: #ccc
+	+r(1024)
+		display: none
+
+.page__wrapp
+	width: calc(100% - 225px)
+	display: inline-block
+	vertical-align: top
+	+r(1024)
+		width: 100%
+
+.page__vswrapp
+	width: 100%
+	max-width: 980px
+	padding: 0 20px
+	margin: 30px auto
+	+box
+
+* html .page__wrapper
+	height: 100%
+
+a
+	text-decoration: none
+	outline: none
+
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+b, strong
+	font-weight: normal
+
+p
+	margin: 0
+
+
+.btn
+	display: inline-block
+	vertical-align: top
+	width: 260px
+	max-width: 100%
+	left: 60px
+	text-align: center
+	line-height: 60px
+	text-transform: uppercase
+	font-size: 14px
+	background-color: #525ca3
+	border: none
+	outline: none
+	padding: 0
+	margin: 0
+	border-radius: 4px
+	color: #fff
+	cursor: pointer
+	+lr
+	+tr(.4s)
+	+r(700)
+		line-height: 36px
+		font-size: 16px
+	+r(650)
+		font-size: 12px
+	&:hover
+		box-shadow: 0 0 6px rgba(83, 92, 161, .4)
+
+/*-- title -*/
+
+.title
+	&__main
+		font-size: 26px
+		line-height: 1.38
+		color: #333
+		+lsb
+		+r(700)
+			font-size: 18px
+
+/*- desc -*/
+
+.desc
+	&__main
+		font-size: 18px
+		color: #333
+		line-height: 1.33
+		+lr
+		+r(700)
+			font-size: 14px
+	&__blue
+		font-size: 18px
+		line-height: 1.66
+		color: $blue
+		+lr
+		+r(700)
+			font-size: 14px
+
+.is-center
+	text-align: center
+
+.ru-nomeric
+	font-size: 14px
+	color: #333
+	+lr
+	+r(700)
+		font-size: 12px
+
+.page-popup
+	text-decoration
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	display: none
+	&.is-active
+		display: block
+
+.page-window
+	+vcenter
+	width: 466px
+	max-width: 100%
+	padding: 40px 20px
+	background-color: #fff
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15)
+	text-align: center
+
+.popup__desc
+	font-size: 24px
+	line-height: 1.25
+	margin: 0
+	color: $blue
+	+lr
+.popup__btn
+	display: inline-block
+	vertical-align: top
+	margin-top: 20px
+	padding: 0 20px
+	height: 60px
+	width: 258px
+	max-width: 100%
+	line-height: 60px
+	text-transform: uppercase
+	font-size: 14px
+	color: #fff
+	letter-spacing: .075em
+	border: none
+	outline: none
+	border-radius: 4px
+	background-color: $blue
+	cursor: pointer
+	+tr(.4s)
+	&:hover
+		opacity: .8

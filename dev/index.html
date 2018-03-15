@@ -1,0 +1,828 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>shema-pereclucheniya</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        
+        
+        <link rel="icon" type="image/png" href="favicon.png">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+        
+    </head>
+
+    <body class="page">
+        
+
+        <div class="page-asider"></div>
+
+        <div class="page__wrapp">
+            <div class="page__vswrapp">
+                
+                <div class="static">
+                	<h2 class="title__main">Схема переходной политерапии АЭП для взрослых пациентов с массой тела более 60 кг при переключении пациента с одной антиэпилептической терапии на другую. </h2>
+                	<p class="desc__main">Данный инструмент позволит автоматически рассчитать среднюю рекомендованную дозировку вальпроевой кислоты и длительность перехода.<sup>2</sup> </p>
+                	<p class="desc__main"> Если ранее принимавшийся противоэпилептический препарат отменяется, то его отмена должна проводиться постепенно.<sup>2</sup>
+                	</p>
+                
+                	<div class="weight">
+                		<div class="weight__item is-border">
+                			<div class="weight__wrap">
+                				<div class="static__num">1</div>
+                				<span class="desc__blue">Введите массу тела пациента (кг): </span>
+                			</div>
+                			<div class="weight__enter">
+                				<div class="weight__pic">
+                					<img src="static/img/content/libras.png" alt="libras" class="weight__img">
+                				</div>
+                				<input type="tel" name="weight" class="weight__input" maxlength="3" max="300" placeholder="60" >
+                			</div>
+                		</div>
+                
+                		<div class="weight__item">
+                			<div class="static__num">2</div>
+                			<span class="desc__blue">Выберите исходный препарат: </span>
+                		</div>
+                	</div>
+                
+                	<div class="choise">
+                		<a href="#" class="choise__item " data-open="carbamazepin">
+                			<div class="choise__from">Карбамазепин</div>
+                			<div class="choise__to">Вальпроевая кислота</div>
+                		</a>
+                		<a href="#" class="choise__item" data-open="livenirazim">
+                			<div class="choise__from">Леветирацетам</div>
+                			<div class="choise__to">Вальпроевая кислота</div>
+                		</a>
+                		<a href="#" class="choise__item" data-open="topiramat">
+                			<div class="choise__from">Топирамат</div>
+                			<div class="choise__to">Вальпроевая кислота</div>
+                		</a>
+                	</div>
+                
+                
+                </div>                
+                <div class="choose">
+                	<div class="choose__title">Схема переключения <sup>1,2,3</sup></div>
+                
+                	<div class="choose__item" id="carbamazepin">
+                		<div class="choose__preparat" >
+                			<div class="choose__preparat_from">Карбамазепин</div>
+                			<div class="choose__preparat_arrow"></div>
+                			<div class="choose__preparat_to">Вальпроевая кислота</div>
+                		</div>
+                		<div class="week" id="carbamazepinContent">
+                
+                			<div class="week__title">Недели</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1000 мг <sup>4*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num mod-transparent"></div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod-transparent">
+                						0 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">1</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w20">
+                						250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">2</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w30">
+                						500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">3</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w50">
+                						750 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">4</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w60">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">5</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w80">
+                						1250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w50">
+                						800 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">6</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w50">
+                						800 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">7</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w40">
+                						600 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">8</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w40">
+                						600 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">9</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w30">
+                						400 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">10</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w30">
+                						400 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">11</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w20">
+                						200 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">12</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w20">
+                						200 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">13</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod-transparent">
+                						0 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num  mod-transparent"></div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>4*</sup>
+                					</div>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="is-center">
+                			<button class="btn"> РАспеЧатать</button>
+                			<!-- <button class="btn" onclick="printDiv('carbamazepinContent')" > РАспеЧатать</button> -->
+                		</div>
+                	</div>
+                
+                	<div class="choose__item" id="livenirazim">
+                		<div class="choose__preparat" >
+                			<div class="choose__preparat_from">Леветирацетам</div>
+                			<div class="choose__preparat_arrow"></div>
+                			<div class="choose__preparat_to">Вальпроевая кислота</div>
+                		</div>
+                		<div class="week" id="livenirazimContent">
+                			<div class="week__title">Недели</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1500 мг <sup>4*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num mod-transparent"></div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod-transparent">
+                						0 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">1</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w20">
+                						300 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">2</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w30">
+                						600 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">3</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w50">
+                						900 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						1500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">4</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w60">
+                						1200 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet  mod_w80">
+                						1250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">5</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						1500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w80">
+                						1250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">6</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w70">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">7</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w70">
+                						1000 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">8</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w50">
+                						750 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">9</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w50">
+                						750 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">10</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w30">
+                						500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">11</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w30">
+                						500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">12</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w20">
+                						250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">13</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w20">
+                						250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">14</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod-transparent">
+                						0 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num  mod-transparent"></div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>4*</sup>
+                					</div>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="is-center">
+                			<button class="btn" > РАспеЧатать</button>
+                		</div>
+                	</div>
+                
+                	<div class="choose__item" id="topiramat">
+                		<div class="choose__preparat" >
+                			<div class="choose__preparat_from">Топирамат</div>
+                			<div class="choose__preparat_arrow"></div>
+                			<div class="choose__preparat_to">Вальпроевая кислота</div>
+                		</div>
+                		<div class="week" id="topiramatContent" >
+                			<div class="week__title">Недели</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						300 мг <sup>4*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num mod-transparent"></div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod-transparent">
+                						0 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						300 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">1</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w40">
+                						300 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						300 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">2</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w60">
+                						600 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						300 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">3</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w70">
+                						900 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet">
+                						300 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">4</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet mod_w80">
+                						1200 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet  mod_w80">
+                						250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">5</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						1500 мг <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w80">
+                						250 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">6</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w70">
+                						200 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">7</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w70">
+                						200 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">8</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w50">
+                						150 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">9</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w50">
+                						150 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">10</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w30">
+                						100 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">11</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w30">
+                						100 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">12</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w20">
+                						50 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">13</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod_w20">
+                						50 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num ">14</div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>*</sup>
+                					</div>
+                				</div>
+                			</div>
+                
+                			<div class="week__item">
+                				<div class="week__from">
+                					<div class="week__from_cheet mod-transparent">
+                						0 мг <sup>*</sup>
+                					</div>
+                				</div>
+                				<div class="week__num  mod-transparent"></div>
+                				<div class="week__to">
+                					<div class="week__to_cheet">
+                						<span>1500 мг</span> <sup>4*</sup>
+                					</div>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="is-center">
+                			<button class="btn"> РАспеЧатать</button>
+                		</div>
+                	</div>
+                
+                
+                </div>                
+                <footer class="footer">
+                	<ul class="simple__list">
+                		<li class="simple__item">
+                			<img class="simple__item_icon" src="static/img/content/icon-list.png" alt="list-icon">
+                			<p class="desc__main">Хотя суточная доза определяется в зависимости от возраста и массы тела больного, следует принимать во внимание широкий спектр индивидуальной чувствительности к вальпроевой кислоте.<sup>2</sup></p>
+                		</li>
+                	</ul>
+                
+                	<div class="literature">
+                		<h4 class="literature__title"> Источники:</h4>
+                		<ul class="literature__list">
+                			<li class="literature__item">B.F. Bourgeois. Epilepsy Res. 2002; 52(1): 53-60/</li>
+                			<li class="literature__item">Инструкция по медицинскому применению препарата Депакин<sup>®</sup> Хроносфера от 12.07.2017 </li>
+                			<li class="literature__item">Ковалева И.Ю. Выбор альтернативной монотерапии при эпилепсии. Эпилепсия и пароксизмальные состояния 2015, том 7, №4, с.50-57.</li>
+                			<li class="literature__item">http://www.whocc.no/atc_ddd_index/ Дата обращения 29.01.2016.</li>
+                		</ul>
+                	</div>
+                
+                	<div class="footnote">
+                		<p class="footnote__desc"><sup>&lowast;</sup> Использована “усредненная” суточная доза - defined daily dose, рекомендованная ВОЗ для стандартизированных расчетов.</p>
+                		<p class="footnote__desc"><sup>&lowast;&lowast;</sup> При расчетах в качестве средней массы тела использовалась масса 75 кг.</p>
+                		<p class="footnote__desc"> <sup>&lowast;&lowast;&lowast; </sup>МИНИСТЕРСТВО ЗДРАВООХРАНЕНИЯ И СОЦИАЛЬНОГО РАЗВИТИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ ПРИКАЗ 28 февраля 2005 г. N 174 ОБ УТВЕРЖДЕНИИ СТАНДАРТА МЕДИЦИНСКОЙ ПОМОЩИ БОЛЬНЫМ ЭПИЛЕПСИЕЙ; National Institute for Health and Care Excellence (NICE). Epilepsies: diagnosis and management, Clinical guideline (CG137), Published: 11 January 2012, Last updated February 2016 (nice.org.uk/cg137, дата обращения 27.05.2016); - В.В. Калинин, Психиатрия и психофармакотерапия им. П.Б. Ганнушкина. 2003; 03: 126 - 130.</p>
+                	</div>
+                	<div class="ru-nomeric">SARU.VPA.18.02.0269.</div>
+                </footer>            </div>
+        </div>
+
+        <div class="page-popup">
+            <div class="page-window">
+                <p class="popup__desc">Пожалуйста, укажите вес <br> от 60 кг</p>
+                <button class="popup__btn">Ввод</button>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function printDiv(divName) {
+                var printContents = document.getElementById(divName).innerHTML;
+                var w = window.open();
+                w.document.write(printContents);
+                w.print();
+                w.close();
+            }
+        </script>
+
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>
