@@ -1,3 +1,10 @@
+'head': {
+    defaults: {
+        title: 'shema-pereclucheniya',
+        useSocialMetaTags: false
+    }
+},
+
 /* Module data structure */
 
 // moduleName: {
@@ -13,13 +20,6 @@ _template: {
         title: 'Hello world',
         age: 10,
         button: false
-    }
-},
-
-'head': {
-    defaults: {
-        title: 'shema-pereclucheniya',
-        useSocialMetaTags: false
     }
 },
 

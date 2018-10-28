@@ -59,11 +59,26 @@
 				top: 0
 				transform: translate(50%, -38%)
 				+arr(11, 7, #ccc, r)
+	&.is-print
+		margin-top: 0
+		width: 100%
+		min-width: 600px
+		.week__to_cheet,
+		.week__from_cheet
+			height: 35px
+		.week__item
+			height: 35px
+			line-height: 35px
+			margin-top: 10px
+		.choose__title
+			font-size: 22px
+			margin-bottom: 12px
+
 
 .week
 	font-size: 18px
 	color: #333
-	margin-bottom: 80px
+	margin-bottom: 60px
 	text-align: center
 	+ll
 	+r(700)
@@ -153,25 +168,27 @@
 		min-width: 96px
 		+r(700)
 			min-width: 50px
-		+r(450)
+		+r(600)
 			min-width: 44px
 	.mod_w30
 		width: 30%
+		min-width: 100px
 		+r(1080)
 			width: 34%
-		+r(450)
+		+r(600)
 			min-width: 50px
 	.mod_w40
 		width: 40%
-		+r(450)
+		min-width: 106px
+		+r(600)
 			min-width: 58px
 	.mod_w50
 		width: 50%
-		+r(450)
+		+r(600)
 			min-width: 64px
 	.mod_w60
 		width: 60%
-		+r(450)
+		+r(600)
 			min-width: 72px
 	.mod_w70
 		width: 70%
@@ -188,7 +205,7 @@
 		min-width: 96px
 		+r(700)
 			min-width: 50px
-		+r(450)
+		+r(600)
 			min-width: 44px
 	.mod_w30
 		width: 30%
@@ -213,22 +230,23 @@
 		width: 44%
 		+r(780)
 			width: 52%
-		+r(450)
+		+r(600)
 			min-width: 78px
 		&.mod_w20
 			width: 22%
-			min-width: 1px
+			min-width: 72px
 			+r(780)
 				width: 26%
-			+r(450)
+			+r(600)
 				min-width: 46px
 		&.mod_w30
 			width: 25%
+			min-width: 85px
 			+r(780)
 				width: 28%
 			+r(710)
 				width: 29%
-			+r(450)
+			+r(600)
 				min-width: 52px
 		&.mod_w40
 			width: 26%
@@ -236,9 +254,10 @@
 				width: 30%
 		&.mod_w50
 			width: 30%
+			min-width: 86px
 			+r(780)
 				width: 32%
-			+r(450)
+			+r(600)
 				min-width: 58px
 		&.mod_w60
 			width: 34%
@@ -246,13 +265,14 @@
 				width: 36%
 		&.mod_w70
 			width: 37%
+			min-width: 88px
 			+r(780)
 				width: 38%
-			+r(450)
+			+r(600)
 				min-width: 64px
 		&.mod_w80
 			width: 40%
-			+r(450)
+			+r(600)
 				min-width: 74px
 		&.mod_w90
 			width: 44%
